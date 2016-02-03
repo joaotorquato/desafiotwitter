@@ -1,0 +1,7 @@
+<%= form_tag(tweets_path, method: "post") do %>
+  <%= label_tag(:latitude, "Latitude:") %>
+  <%= text_field_tag(:latitude) %>
+  <%= label_tag(:longitude, "Longitude:") %>
+  <%= text_field_tag(:longitude) %>
+  <%= submit_tag("Get Tweets") %>
+<% end %>
